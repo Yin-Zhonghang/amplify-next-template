@@ -22,8 +22,7 @@ export default function App() {
     });
   }
 
-
-  // const { signOut } = useAuthenticator();
+  const { signOut } = useAuthenticator();
 
   useEffect(() => {
     listTodos();
@@ -55,7 +54,7 @@ export default function App() {
           Review next steps of this tutorial.
         </a>
       </div>
-      {/* <button onClick={signOut}>Sign out</button> */}
+      <button onClick={signOut}>Sign out</button>
     </main>
   );
 }
